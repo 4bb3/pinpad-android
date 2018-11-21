@@ -5,8 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.cassby.terminal.pinpad.PinpadFragment;
+import com.cassby.terminal.pinpad.PinpadOutput;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements PinpadOutput {
 
     private PinpadFragment pinpadFragment;
 
@@ -24,5 +25,16 @@ public class MainActivity extends AppCompatActivity {
 
         pinpadFragment.setTint(209,96,111);
         pinpadFragment.setKeyColor(255,255,255);
+        pinpadFragment.setOutput(this);
+    }
+
+    @Override
+    public void didSubmitCode(String code) {
+
+    }
+
+    @Override
+    public void didPressBack() {
+        finish();
     }
 }

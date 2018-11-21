@@ -40,6 +40,8 @@ public class PinpadFragment extends Fragment {
 
     private ConstraintLayout dots;
 
+    Boolean shouldShowBack = false;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.pinpad, container, false);
@@ -207,6 +209,15 @@ public class PinpadFragment extends Fragment {
             }
         });
 
+
+        delete.setVisibility(View.INVISIBLE);
+
+        if (shouldShowBack) {
+            back.setVisibility(View.VISIBLE);
+        } else {
+            back.setVisibility(View.INVISIBLE);
+        }
+
         return view;
     }
 
@@ -266,11 +277,11 @@ public class PinpadFragment extends Fragment {
     }
 
     public void hideBack() {
-        back.setVisibility(View.INVISIBLE);
+        shouldShowBack = false;
     }
 
     public void showBack() {
-        back.setVisibility(View.VISIBLE);
+        shouldShowBack = true;
     }
 
     public void hideDelete() {
