@@ -34,7 +34,7 @@ public class PinpadFragment extends Fragment {
     private Button delete;
 
     private String code = "";
-    private PinpadInterface output;
+    private PinpadOutput output;
     private Integer color = null;
     private Integer keyColor = null;
 
@@ -296,7 +296,7 @@ public class PinpadFragment extends Fragment {
                 .start();
     }
 
-    public void setOutput(PinpadInterface output) {
+    public void setOutput(PinpadOutput output) {
         this.output = output;
     }
 }

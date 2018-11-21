@@ -1,6 +1,6 @@
 package com.cassby.terminal.pinpad;
 
-interface PinpadInterface {
+public interface PinpadOutput {
     void didSubmitCode(String code);
     void didPressBack();
 }
