@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/pinpadWidth"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/dotsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pinpadOvalMarginTop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/pinpad_1oval"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/oval"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/pinpad_2oval"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/oval"
+            app:layout_constraintLeft_toRightOf="@id/pinpad_1oval"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/pinpadOvalMarginLeft"
+            />
+
+        <ImageView
+            android:id="@+id/pinpad_3oval"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/oval"
+            app:layout_constraintLeft_toRightOf="@id/pinpad_2oval"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/pinpadOvalMarginLeft"
+            />
+
+        <ImageView
+            android:id="@+id/pinpad_4oval"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/oval"
+            app:layout_constraintLeft_toRightOf="@id/pinpad_3oval"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/pinpadOvalMarginLeft"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/pinpan_1button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="1"
+        android:layout_marginTop="@dimen/pinpadMarginTop"/>
+
+    <Button
+        android:id="@+id/pinpan_2button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintLeft_toRightOf="@id/pinpan_1button"
+        app:layout_constraintTop_toTopOf="@id/pinpan_1button"
+        android:layout_marginLeft="@dimen/pinpadButtonMargin"
+        android:text="2"/>
+
+    <Button
+        android:id="@+id/pinpan_3button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintLeft_toRightOf="@id/pinpan_2button"
+        app:layout_constraintTop_toTopOf="@id/pinpan_2button"
+        android:layout_marginLeft="@dimen/pinpadButtonMargin"
+        android:text="3"/>
+
+    <Button
+        android:id="@+id/pinpan_4button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintTop_toBottomOf="@id/pinpan_1button"
+        android:layout_marginTop="@dimen/pinpadButtonMargin"
+        app:layout_constraintLeft_toLeftOf="@id/pinpan_1button"
+        android:text="4"/>
+
+    <Button
+        android:id="@+id/pinpan_5button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintLeft_toRightOf="@id/pinpan_4button"
+        app:layout_constraintTop_toTopOf="@id/pinpan_4button"
+        android:layout_marginLeft="@dimen/pinpadButtonMargin"
+        android:text="5"/>
+
+    <Button
+        android:id="@+id/pinpan_6button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintLeft_toRightOf="@id/pinpan_5button"
+        app:layout_constraintTop_toTopOf="@id/pinpan_5button"
+        android:layout_marginLeft="@dimen/pinpadButtonMargin"
+        android:text="6"/>
+
+    <Button
+        android:id="@+id/pinpan_7button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintTop_toBottomOf="@id/pinpan_4button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/pinpadButtonMargin"
+        android:text="7"/>
+
+    <Button
+        android:id="@+id/pinpan_8button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintTop_toTopOf="@id/pinpan_7button"
+        app:layout_constraintLeft_toRightOf="@id/pinpan_7button"
+        android:layout_marginLeft="@dimen/pinpadButtonMargin"
+        android:text="8"/>
+
+    <Button
+        android:id="@+id/pinpan_9button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintTop_toTopOf="@id/pinpan_7button"
+        app:layout_constraintLeft_toRightOf="@id/pinpan_8button"
+        android:layout_marginLeft="@dimen/pinpadButtonMargin"
+        android:text="9"/>
+
+    <Button
+        android:id="@+id/pinpan_0button"
+        android:layout_width="@dimen/pinpadButtonWidth"
+        android:layout_height="@dimen/pinpadButtonWidth"
+        android:background="@drawable/pinpad_button"
+        app:layout_constraintTop_toBottomOf="@id/pinpan_8button"
+        app:layout_constraintLeft_toLeftOf="@id/pinpan_8button"
+        android:layout_marginTop="@dimen/pinpadButtonMargin"
+        android:text="0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pinpadBack"
+        style="?attr/buttonBarButtonStyle"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pinpan_0button"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/pinpad_back"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pinpadDelete"
+        style="?attr/buttonBarButtonStyle"
+        android:textColor="#FFFFFF"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pinpan_0button"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/pinpad_delete"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pinpadButtonWidth">74dp</dimen>
+    <dimen name="pinpadWidth">262dp</dimen>
+    <dimen name="pinpadButtonMargin">20dp</dimen>
+    <dimen name="pinpadMarginTop">80dp</dimen>
+    <dimen name="pinpadLeftOvalMargin">0dp</dimen>
+    <dimen name="pinpadOvalMarginTop">29dp</dimen>
+    <dimen name="pinpadOvalMarginLeft">26dp</dimen>
+</resources>
