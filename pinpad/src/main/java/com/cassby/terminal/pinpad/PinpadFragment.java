@@ -305,6 +305,12 @@ public class PinpadFragment extends Fragment {
                 .ofFloat(dots, "translationX", 0, 25, -25, 25, -25,15, -15, 6, -6, 0)
                 .setDuration(1500)
                 .start();
+
+    }
+
+    public void resetCode() {
+        code = "";
+        fillOrUnfillCode();
     }
 
     public void setOutput(PinpadOutput output) {
